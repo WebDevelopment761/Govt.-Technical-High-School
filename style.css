@@ -1,0 +1,298 @@
+/* General Body & Typography */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color:darkgreen;
+  padding: 10px;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Generic Section */
+.section {
+  padding: 40px 20px;
+}
+.section h2 {
+  color: #004d99;
+  margin-bottom: 15px;
+}
+
+/* Home Info Section */
+.home-info {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 20px;
+  max-width: 1000px;
+  background-color: rgb(42, 180, 235);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.home-info h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: white;
+}
+.home-info p {
+  font-size: 1.1em;
+  color: white;
+}
+
+/* Scroll Gallery */
+.scroll-gallery-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.scroll-gallery {
+  display: flex;
+  gap: 20px;
+  animation: scrollGallery 100s linear infinite;
+}
+
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+.scroll-gallery img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+/* Courses Section */
+.course-list {
+  display: grid;
+  gap: 20px;
+}
+.course-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.course-card h2 {
+  margin-top: 0;
+  color: #004d99;
+}
+.course-card h3 {
+  margin-top: 0;
+  color: black;
+}
+.course-images {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.course-images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Special Days & Events Section */
+.special-day-section {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.special-day-section h2 {
+  color: #004d99;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-card {
+  background-color: gainsboro;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: #004d99;
+}
+
+.event-card p {
+  margin: 10px 0 0;
+  color: #333;
+}
+
+/* About Section */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #004d99;
+  text-align: center; /* Center heading */
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+..about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the block */
+}
+
+.about-details p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  margin: 8px 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.about-details strong {
+  font-weight: bold;
+}
+
+/* Contact Us Section */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #004d99;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #004d99;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #003366;
+}
+
+/* Map Section */
+.map-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+
+}
+.map-section h2 {
+  font-size: 28px;
+  color: #004d99;
+  margin-bottom: 20px;
+}
+.map-container {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 0 10px #004d99;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Footer */
+footer {
+  background-color: #004d99;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
